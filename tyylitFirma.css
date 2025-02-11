@@ -1,0 +1,223 @@
+body {
+    /*display: flex;
+    flex-direction: column;*/
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: 40%;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: #000000;
+    font-family: "Arial";
+    font-size: 40px;
+    text-align: left;
+}
+h2 {
+    color: #000000;
+    font-family: "Arial";
+    font-size: 25px;
+    text-align: left;
+}
+h3 {
+    color: #000000;
+    font-family: "Arial";
+    font-size: 20px;
+    text-align: left;
+}
+p {
+    color: #000000;
+    font-family: "Arial";
+    font-size: 20px;
+    text-align: left;
+}
+nav {
+    list-style: none;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: "Arial";
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+nav li {
+    display: inline-block;
+    margin-left: 30px;
+}
+nav li:first-child {
+    margin-left: 0;
+}
+
+.NapitEtusivu {
+	-moz-box-shadow:inset 0px 1px 0px 0px #c1ed9c;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #c1ed9c;
+	box-shadow:inset 0px 1px 0px 0px #c1ed9c;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #9dce2c), color-stop(1, #8cb82b) );
+	background:-moz-linear-gradient( center top, #9dce2c 5%, #8cb82b 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#9dce2c', endColorstr='#8cb82b');
+	background-color:#9dce2c;
+	-webkit-border-top-left-radius:33px;
+	-moz-border-radius-topleft:33px;
+	border-top-left-radius:33px;
+	-webkit-border-top-right-radius:33px;
+	-moz-border-radius-topright:33px;
+	border-top-right-radius:33px;
+	-webkit-border-bottom-right-radius:33px;
+	-moz-border-radius-bottomright:33px;
+	border-bottom-right-radius:33px;
+	-webkit-border-bottom-left-radius:33px;
+	-moz-border-radius-bottomleft:33px;
+	border-bottom-left-radius:33px;
+text-indent:0;
+	border:1px solid #2e420b;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	font-style:normal;
+height:40px;
+	line-height:40px;
+width:184px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #689324;
+}.NapitEtusivu:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #8cb82b), color-stop(1, #9dce2c) );
+	background:-moz-linear-gradient( center top, #8cb82b 5%, #9dce2c 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#8cb82b', endColorstr='#9dce2c');
+	background-color:#8cb82b;
+    text-shadow:2px 2px 0px #689335;
+    
+}.NapitEtusivu:active {
+	position:relative;
+	top:1px;
+}
+/* ----------Tässä jaettu pääsivun tekstit kahteen sarakkeeseen----------- */
+.container {
+    /* display: flex; 
+    flex: 1;  /* This makes the content area take up the remaining space */
+    /*align-items: flex-start; /* Aligns the columns to the top */
+    /*width: 50%;*/
+    overflow-y: auto; /* Makes the content area scrollable */
+    padding-top: 50px; /* Adjust based on the height of your navbar */
+    padding-bottom: 170px; /* Adjust based on the height of your footer */
+    width: 50%;
+    scrollbar-width: none;
+    padding-left: 5%;
+}
+.container h1 {
+    text-align: center;
+}
+.container2 {
+    overflow-y: auto; /* Makes the content area scrollable */
+    padding-top: 50px; /* Adjust based on the height of your navbar */
+    padding-bottom: 170px; /* Adjust based on the height of your footer */
+    width: 50%;
+    scrollbar-width: none;
+    padding-left: 5%;
+}
+.container2 a {
+    font-size: 40px;
+    color: #000000;
+}
+.linkkirivi > div {
+    width: 30%;
+    text-align: center;
+    
+}
+.linkkirivi > div img {
+    vertical-align: center;
+}
+.linkkirivi > div a {
+    vertical-align: bottom;
+}
+
+.linkkirivi {
+    display: flex;
+    padding-top: 30px;
+}
+
+/*.linkkirivi a {
+    margin-right: 20px;
+}*/
+.column {
+    /*width: 400px;*/
+    margin-right: 10px; /* Adds space between columns */
+    /* flex: 1; This makes the content area take up the remaining space */
+    width: 100%;
+}
+/* ------------------------------------------------------------------------ */
+
+footer {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: "Arial";
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures the footer is above other content */
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    list-style: none;
+}
+footer li {
+    display: inline-block;
+    margin-left: 30px;
+    color: #FFFFFF;
+}
+footer li:first-child {
+    margin-left: 0;
+}
+
+footer p, footer a {
+    color: #FFFFFF;
+}
+/*
+.lista_alue {
+    margin-left: 30px;
+    font-size: 30px;
+}
+.lista_alue h1 {
+    margin-left: 60px;
+    text-decoration: underline;
+}
+    */
+table, th, td {
+	border: 3px solid black;
+	border-collapse: collapse;
+
+	text-align: center;
+	padding: 8px;
+    font-size: 1.3em;
+}
+table a {
+    color: #000000;
+}
+.container3 {
+    overflow-y: auto; /* Makes the content area scrollable */
+    padding-top: 50px; /* Adjust based on the height of your navbar */
+    padding-bottom: 170px; /* Adjust based on the height of your footer */
+    width: 50%;
+    scrollbar-width: none;
+    padding-left: 5%;
+}
+.tuotteet h1 {
+    text-decoration-line: underline;
+    font-size: 1.2em;
+    margin-left: 30px;
+}
+.map {
+    width: 40%;
+    position: fixed;
+    bottom: 100px;  
+    margin-left: 20%;
+}

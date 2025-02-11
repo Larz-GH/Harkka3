@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <meta charset="UTF-8">
+        <title> Lassen Lemmikkikauppa </title>
+        <style>    
+            body {
+                background-image: url('Kuvat/Kissa.jpg');
+            }
+        </style>
+        <link rel="stylesheet" href="tyylitFirma.css"></link>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="Firma.html" class="NapitEtusivu" style="float:left;">Koti</a></li>
+                <li><a href="Lemmikkituotteet.html" class="NapitEtusivu" style="float:left;"><u>Lemmikkituotteet</u></a></li>
+                <li><a href="Maatalouselaimet.html" class="NapitEtusivu" style="float:left;"> Maatalouseläimet </a></li>
+                <li><a href="RehutJaNappulat.html" class="NapitEtusivu" style="float:left;"> Rehut ja nappulat </a></li>
+                <li><a href="ErikoisetElaimet.html" class="NapitEtusivu" style="float:left;">Eksoottiset</a></li>
+                <li><a href="Yhteystiedot.html" class="NapitEtusivu" style="float:left;"> Yhteystiedot </a></li>
+            </ul>
+        </nav>
+        <div class="container3"><!--koko alue-->
+            <div>
+            <h1 class="tuotteet">Tuotteet Kissoille</h1>
+                <div><!--tänän 1.taulukko-osa-->
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tuotekoodi</th>
+                                <th>Nimeke</th>
+                                <th>Kuva</th>
+                                <th>Hinta</th>
+                                <th>Valittuna /kpl</th>
+                                <th>Ostoskoriin</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1234</td>
+                                <td><a href="https://tinyurl.com/3b6evu24" target="_blank" title="Hiiri narussa">Hiiri narussa</a></td>
+                                <td><a href="https://tinyurl.com/3b6evu24" target="_blank"><img src=Kuvat/Kissa.jpg alt="Hiiri Narussa" height=200></td>
+                                <td>5,90</td>
+                                <td>0</td>
+                                <td>
+                                <button onclick="lisaaTuote('Hiiri narussa')">Lisää</button>
+                                <button onclick="poistaTuote('Hiiri narussa')">Poista</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1236</td>
+                                <td><a href="https://www.zoo.fi/kissat/produkter/pehmohiiret-joissa-on-kello?p=300002727" target="_blank" title="Hiiri kellolla>">Hiiri kellolla</a></td>
+                                <td><a href="https://www.zoo.fi/kissat/produkter/pehmohiiret-joissa-on-kello?p=300002727" target="_blank"><img src=Kuvat/Kissa.jpg alt="Hiiri Kellolla" height=200></a></td>
+                                <td>5,90</td>
+                                <td>0</td>
+                                <td>
+                                <button onclick="lisaaTuote('Hiiri kellolla')">Lisää</button>
+                                <button onclick="poistaTuote('Hiiri kellolla')">Poista</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1238</td>
+                                <td>Torkkutyyny</td>
+                                <td><img src=Kuvat/Kissa.jpg alt="Torkkutyyny" height=200></td>
+                                <td>9,90</td>
+                                <td>0</td>
+                                <td>
+                                <button onclick="lisaaTuote('Torkkutyyny')">Lisää</button>
+                                <button onclick="poistaTuote('Torkkutyyny')">Poista</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1240</td>
+                                <td>Ruoka-astia</td>
+                                <td><img src=Kuvat/Kissa.jpg alt="Ruoka-astia" height=200></td>
+                                <td>7,90</td>
+                                <td>0</td>
+                                <td>
+                                <button onclick="lisaaTuote('Ruoka-astia')">Lisää</button>
+                                <button onclick="poistaTuote('Ruoka-astia')">Poista</button>
+                                </td>
+                            </tr>
+                            <script>
+                                function lisaaTuote(Nimeke){
+                                alert("Lisätään ostoskoriin " + Nimeke);
+                                console.log("tuotteiden muokkausnappulaa painettu");
+                                };
+                            </script>
+                            <script>
+                                function poistaTuote(Nimeke){
+                                alert("Poistetaan ostoskorista " + Nimeke);
+                                console.log("tuotteiden poistonappulaa painettu");
+                                };
+                            </script>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div></div>
+        <footer>
+            <ul>
+                <li> Lassen Lemmikkikauppa &reg, 2021 </li>
+                <li><a href="https://akvaariokeskus.com/" target="blank" title="Firman sivut">Vastaava toimia</a></li>
+                <li><a href="#alkuun">Sivun alkuun</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>
